@@ -7,11 +7,11 @@ title: baz
 
 링크와 마찬가지로 이미지에도 각주 스타일 구문이 있습니다.
 
-! [Alt text] [id]
+![Alt text][id]
 
 나중에 URL 위치를 정의하는 문서에서 참조로 :
 
-[id] : https://octodex.github.com/images/dojocat.jpg "The Dojocat"
+[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
 ## 링크
 
