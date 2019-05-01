@@ -66,7 +66,7 @@ function Navbar(props) {
         <div className="navbar__items">
           <Link
             className="navbar__brand"
-            to={baseUrl + (translationEnabled ? thisLanguage : '')}>
+            to={baseUrl + ((translationEnabled && thisLanguage) || '')}>
             {headerIcon && (
               <img
                 className="navbar__logo"

@@ -14,7 +14,8 @@ module.exports = {
   defaultLanguage: 'en',
   url: 'https://docusaurus.io',
   headerLinks: [
-    {doc: 'foo/bar', label: 'Docs'},
+    {url: 'docs/en/foo/bar', label: 'English'},
+    {url: 'docs/ko/foo/bar', label: 'Korean'},
     {page: 'hello/world', label: 'Hello'},
   ],
   headerIcon: 'img/docusaurus.svg',

@@ -262,7 +262,7 @@ class DocusaurusPluginContentDocs {
         rules: [
           {
             test: /(\.mdx?)$/,
-            include: [this.contentPath],
+            include: [this.contentPath, translatedDir],
             use: [
               getCacheLoader(isServer),
               getBabelLoader(isServer),
