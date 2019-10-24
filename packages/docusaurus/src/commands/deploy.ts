@@ -67,7 +67,7 @@ export async function deploy(siteDir: string): Promise<void> {
     process.env.GITHUB_HOST || siteConfig.githubHost || 'github.com';
 
   const useSSH = process.env.USE_SSH;
-  const remoteBranch = useSSH
+  const remoteBranch = (useSSH && useSSH.toLowerCase() !== 'false')
     ? `git@${githubHost}:${organizationName}/${projectName}.git`
     : `https://${gitUser}@${githubHost}/${organizationName}/${projectName}.git`;
 
